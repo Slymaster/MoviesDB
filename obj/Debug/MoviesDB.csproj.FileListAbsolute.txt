@@ -1,0 +1,14 @@
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\Database.mdf
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\Database_log.ldf
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\MoviesDB.exe.config
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\MoviesDB.exe
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\MoviesDB.pdb
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\EntityFramework.dll
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\EntityFramework.xml
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\obj\Debug\MoviesDB.csproj.CoreCompileInputs.cache
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\obj\Debug\MoviesDB.csproj.CopyComplete
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\obj\Debug\MoviesDB.exe
+C:\Users\s.rey\source\repos\MoviesDB\MoviesDB\obj\Debug\MoviesDB.pdb

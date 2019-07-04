@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserSet" EntityType="DataModel.User" />
+    <EntitySet Name="MovieSet" EntityType="DataModel.Movie" />
+    <AssociationSet Name="Entity1Entity2" Association="DataModel.Entity1Entity2">
+      <End Role="Entity1" EntitySet="UserSet" />
+      <End Role="Entity2" EntitySet="MovieSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Movie" Relationship="DataModel.Entity1Entity2" FromRole="Entity1" ToRole="Entity2" />
+    <Property Name="Login" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="User" Relationship="DataModel.Entity1Entity2" FromRole="Entity2" ToRole="Entity1" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="Entity1Entity2">
+    <End Type="DataModel.User" Role="Entity1" Multiplicity="1" />
+    <End Type="DataModel.Movie" Role="Entity2" Multiplicity="*" />
+  </Association>
+</Schema>
